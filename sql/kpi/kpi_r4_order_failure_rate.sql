@@ -11,8 +11,11 @@
    Time Basis   : orders.order_purchase_timestamp
 
    Notes        :
-     - Measures final failed outcomes only
-     - Root cause analysis is handled separately in R5
+  - Measures final failed outcomes only
+  - Based on terminal-state orders only
+  - Terminal states represent finalized order outcomes with no further status transitions
+  - Does not diagnose system or process-level mismatches
+  - Related operational inconsistencies are monitored separately in R5
 ========================================================= */
 
 WITH params AS (
