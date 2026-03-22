@@ -25,12 +25,8 @@ The goal is to monitor service health, detect delivery issues, measure failure o
 - Based only on terminal-state orders (delivered, canceled, unavailable)
 
 ### R5 — System Mismatch Rate
-- Identifies root causes of failure
-- Detects inconsistencies across:
-  - ERP (orders / payments)
-  - WMS (order items / fulfillment)
-  - TMS (delivery timestamps)
-
+- Flags ERP/WMS/TMS inconsistencies in delivered orders
+- % of orders with missing or misaligned payment, fulfillment, or delivery records
 ---
 
 ## Project Structure
